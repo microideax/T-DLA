@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xCC6CFA53809FFAAC" bd:device="xc7z020clg484-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.1" bd:top="design_1" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>DDR</spirit:name>
+        <spirit:master/>
+        <spirit:busType spirit:library="interface" spirit:name="ddrx" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="interface" spirit:name="ddrx_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>CAN_DEBUG</spirit:name>
+            <spirit:value>false</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>TIMEPERIOD_PS</spirit:name>
+            <spirit:value>1250</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>MEMORY_TYPE</spirit:name>
+            <spirit:value>COMPONENTS</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>DATA_WIDTH</spirit:name>
+            <spirit:value>8</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>CS_ENABLED</spirit:name>
+            <spirit:value>true</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>DATA_MASK_ENABLED</spirit:name>
+            <spirit:value>true</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>SLOT</spirit:name>
+            <spirit:value>Single</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>MEM_ADDR_MAP</spirit:name>
+            <spirit:value>ROW_COLUMN_BANK</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>BURST_LENGTH</spirit:name>
+            <spirit:value>8</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>AXI_ARBITRATION_SCHEME</spirit:name>
+            <spirit:value>TDM</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>CAS_LATENCY</spirit:name>
+            <spirit:value>11</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>CAS_WRITE_LATENCY</spirit:name>
+            <spirit:value>11</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>FIXED_IO</spirit:name>
+        <spirit:master/>
+        <spirit:busType spirit:library="display_processing_system7" spirit:name="fixedio" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="display_processing_system7" spirit:name="fixedio_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>CAN_DEBUG</spirit:name>
+            <spirit:value>false</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="design_1_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports/>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>processing_system7_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="processing_system7" spirit:vendor="xilinx.com" spirit:version="5.5"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_processing_system7_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_DDR_RAM_HIGHADDR">0x1FFFFFFF</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_FCLK_CLK1_BUF">TRUE</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_FREQ_MHZ">533.333313</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0">0.025</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1">0.028</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2">-0.009</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3">-0.061</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_BOARD_DELAY0">0.41</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_BOARD_DELAY1">0.411</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_BOARD_DELAY2">0.341</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_BOARD_DELAY3">0.358</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_APU_PERIPHERAL_FREQMHZ">666.666667</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UART_PERIPHERAL_FREQMHZ">50</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_FPGA0_PERIPHERAL_FREQMHZ">125.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_FPGA1_PERIPHERAL_FREQMHZ">250.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_FPGA2_PERIPHERAL_FREQMHZ">50</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_APU_PERIPHERAL_FREQMHZ">666.666687</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_ACT_DDR_FREQ_MHZ">533.333374</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_DCI_PERIPHERAL_FREQMHZ">10.158730</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_QSPI_PERIPHERAL_FREQMHZ">10.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_SMC_PERIPHERAL_FREQMHZ">10.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_ENET0_PERIPHERAL_FREQMHZ">10.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_ENET1_PERIPHERAL_FREQMHZ">10.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_SDIO_PERIPHERAL_FREQMHZ">10.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_UART_PERIPHERAL_FREQMHZ">50.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_SPI_PERIPHERAL_FREQMHZ">10.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_CAN_PERIPHERAL_FREQMHZ">10.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_WDT_PERIPHERAL_FREQMHZ">111.111115</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_PCAP_PERIPHERAL_FREQMHZ">200.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_TPIU_PERIPHERAL_FREQMHZ">200.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ">125.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ">250.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ">10.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ">10.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_TTC0_CLK0_PERIPHERAL_FREQMHZ">111.111115</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_TTC0_CLK1_PERIPHERAL_FREQMHZ">111.111115</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_TTC0_CLK2_PERIPHERAL_FREQMHZ">111.111115</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_TTC1_CLK0_PERIPHERAL_FREQMHZ">111.111115</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_TTC1_CLK1_PERIPHERAL_FREQMHZ">111.111115</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ACT_TTC1_CLK2_PERIPHERAL_FREQMHZ">111.111115</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_CLK0_FREQ">125000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_CLK1_FREQ">250000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_CLK2_FREQ">10000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_CLK3_FREQ">10000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_SDIO_PERIPHERAL_VALID">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UART_PERIPHERAL_VALID">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_EN_EMIO_TTC0">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_EN_QSPI">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_EN_ENET0">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_EN_GPIO">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_EN_SDIO0">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_EN_UART1">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_EN_TTC0">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_EN_USB0">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_EN_CLK1_PORT">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_PRESET_BANK0_VOLTAGE">LVCMOS 3.3V</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_PRESET_BANK1_VOLTAGE">LVCMOS 1.8V</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_MEMORY_TYPE">DDR 3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_BL">8</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_PARTNO">MT41J128M16 HA-15E</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_TRAIN_WRITE_LEVEL">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_TRAIN_READ_GATE">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_TRAIN_DATA_EYE">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_USE_INTERNAL_VREF">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_NAND_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_NOR_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_QSPI_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ENET0_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_SD0_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UART1_PERIPHERAL_ENABLE">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UART1_UART1_IO">MIO 48 .. 49</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UART1_GRP_FULL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_TTC0_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_PJTAG_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_USB0_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_GPIO_MIO_GPIO_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_MIO_48_PULLUP">disabled</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_MIO_48_IOTYPE">LVCMOS 1.8V</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_MIO_48_SLEW">slow</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_MIO_49_PULLUP">disabled</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_MIO_49_IOTYPE">LVCMOS 1.8V</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_MIO_49_SLEW">slow</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="preset">ZedBoard</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_MIO_TREE_PERIPHERALS">unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#UART 1#UART 1#unassigned#unassigned#unassigned#unassigned</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_MIO_TREE_SIGNALS">unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#tx#rx#unassigned#unassigned#unassigned#unassigned</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_FPGA_FCLK0_ENABLE">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_FPGA_FCLK1_ENABLE">1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>rst_ps7_0_100M</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="proc_sys_reset" spirit:vendor="xilinx.com" spirit:version="5.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_rst_ps7_0_100M_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axi_bram_ctrl_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axi_bram_ctrl" spirit:vendor="xilinx.com" spirit:version="4.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_bram_ctrl_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SINGLE_PORT_BRAM">1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axi_bram_ctrl_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axi_bram_ctrl" spirit:vendor="xilinx.com" spirit:version="4.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_bram_ctrl_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SINGLE_PORT_BRAM">1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>smartconnect_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="smartconnect" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_smartconnect_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_MI">6</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axi_gpio_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axi_gpio" spirit:vendor="xilinx.com" spirit:version="2.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_gpio_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_GPIO_WIDTH">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ALL_OUTPUTS">1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axi_gpio_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axi_gpio" spirit:vendor="xilinx.com" spirit:version="2.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_gpio_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_GPIO_WIDTH">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ALL_INPUTS">1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>top_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="top" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_top_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:interconnections>
+      <spirit:interconnection>
+        <spirit:name>smartconnect_0_M00_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M00_AXI" spirit:componentRef="smartconnect_0"/>
+        <spirit:activeInterface spirit:busRef="S_AXI" spirit:componentRef="axi_bram_ctrl_0"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>smartconnect_0_M01_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M01_AXI" spirit:componentRef="smartconnect_0"/>
+        <spirit:activeInterface spirit:busRef="S_AXI" spirit:componentRef="axi_bram_ctrl_1"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>processing_system7_0_M_AXI_GP0</spirit:name>
+        <spirit:activeInterface spirit:busRef="M_AXI_GP0" spirit:componentRef="processing_system7_0"/>
+        <spirit:activeInterface spirit:busRef="S00_AXI" spirit:componentRef="smartconnect_0"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>smartconnect_0_M02_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M02_AXI" spirit:componentRef="smartconnect_0"/>
+        <spirit:activeInterface spirit:busRef="S_AXI" spirit:componentRef="axi_gpio_0"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>smartconnect_0_M03_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M03_AXI" spirit:componentRef="smartconnect_0"/>
+        <spirit:activeInterface spirit:busRef="S_AXI" spirit:componentRef="axi_gpio_1"/>
+      </spirit:interconnection>
+    </spirit:interconnections>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>processing_system7_0_FCLK_CLK0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK0"/>
+        <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="M_AXI_GP0_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="rst_ps7_0_100M" spirit:portRef="slowest_sync_clk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_1" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="smartconnect_0" spirit:portRef="aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_1" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_RESET0_N"/>
+        <spirit:internalPortReference spirit:componentRef="rst_ps7_0_100M" spirit:portRef="ext_reset_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rst_ps7_0_100M_peripheral_aresetn</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rst_ps7_0_100M" spirit:portRef="peripheral_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_1" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_1" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="rst"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_bram_ctrl_0_bram_addr_a</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="bram_addr_a"/>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="arm_write_feature_addr"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_bram_ctrl_0_bram_en_a</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="bram_en_a"/>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="arm_write_feature_enable"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_bram_ctrl_0_bram_wrdata_a</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="bram_wrdata_a"/>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="arm_write_feature_data"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_bram_ctrl_1_bram_addr_a</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_1" spirit:portRef="bram_addr_a"/>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="arm_read_feature_addr"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_bram_ctrl_1_bram_en_a</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_1" spirit:portRef="bram_en_a"/>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="arm_read_feature_enable"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>processing_system7_0_FCLK_CLK1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK1"/>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="fast_clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rst_ps7_0_100M_interconnect_aresetn</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rst_ps7_0_100M" spirit:portRef="interconnect_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="smartconnect_0" spirit:portRef="aresetn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_gpio_0_gpio_io_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="gpio_io_o"/>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="enable"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>top_0_arm_read_feature_data</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="arm_read_feature_data"/>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_1" spirit:portRef="bram_rddata_a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>top_0_CLP_state</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="CLP_state"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_1" spirit:portRef="gpio_io_i"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+    <spirit:hierConnections>
+      <spirit:hierConnection spirit:interfaceRef="DDR/processing_system7_0_DDR">
+        <spirit:activeInterface spirit:busRef="DDR" spirit:componentRef="processing_system7_0"/>
+      </spirit:hierConnection>
+      <spirit:hierConnection spirit:interfaceRef="FIXED_IO/processing_system7_0_FIXED_IO">
+        <spirit:activeInterface spirit:busRef="FIXED_IO" spirit:componentRef="processing_system7_0"/>
+      </spirit:hierConnection>
+    </spirit:hierConnections>
+  </spirit:design>
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>Addressing/processing_system7_0</spirit:library>
+    <spirit:name>processing_system7</spirit:name>
+    <spirit:version>5.5</spirit:version>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>M_AXI_GP0</spirit:name>
+        <spirit:master>
+          <spirit:addressSpaceRef spirit:addressSpaceRef="Data"/>
+          <spirit:baseAddress spirit:maximum="0x7FFFFFFF" spirit:minimum="0x40000000">0x40000000</spirit:baseAddress>
+        </spirit:master>
+        <spirit:busType spirit:library="interface" spirit:name="aximm" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="interface" spirit:name="aximm_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>master_id</spirit:name>
+            <spirit:value>0</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:addressSpaces>
+      <spirit:addressSpace>
+        <spirit:name>Data</spirit:name>
+        <spirit:range>4G</spirit:range>
+        <spirit:width>32</spirit:width>
+        <spirit:segments>
+          <spirit:segment>
+            <spirit:name>SEG_axi_bram_ctrl_0_Mem0</spirit:name>
+            <spirit:displayName>/axi_bram_ctrl_0/S_AXI/Mem0</spirit:displayName>
+            <spirit:addressOffset>0x40000000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_axi_bram_ctrl_1_Mem0</spirit:name>
+            <spirit:displayName>/axi_bram_ctrl_1/S_AXI/Mem0</spirit:displayName>
+            <spirit:addressOffset>0x42000000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_axi_gpio_0_Reg</spirit:name>
+            <spirit:displayName>/axi_gpio_0/S_AXI/Reg</spirit:displayName>
+            <spirit:addressOffset>0x41200000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_axi_gpio_1_Reg</spirit:name>
+            <spirit:displayName>/axi_gpio_1/S_AXI/Reg</spirit:displayName>
+            <spirit:addressOffset>0x41210000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+        </spirit:segments>
+      </spirit:addressSpace>
+    </spirit:addressSpaces>
+  </spirit:component>
+
+</bd:repository>
