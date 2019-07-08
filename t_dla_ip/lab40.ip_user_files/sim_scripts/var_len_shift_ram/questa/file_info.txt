@@ -1,0 +1,9 @@
+xpm_cdc.sv,systemverilog,xil_defaultlib,../../../../../../../../opt/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_memory.sv,systemverilog,xil_defaultlib,../../../../../../../../opt/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../opt/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_VCOMP.vhd,
+xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_9,../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd,
+c_reg_fd_v12_0_vh_rfs.vhd,vhdl,c_reg_fd_v12_0_5,../../../ipstatic/hdl/c_reg_fd_v12_0_vh_rfs.vhd,
+c_mux_bit_v12_0_vh_rfs.vhd,vhdl,c_mux_bit_v12_0_5,../../../ipstatic/hdl/c_mux_bit_v12_0_vh_rfs.vhd,
+c_shift_ram_v12_0_vh_rfs.vhd,vhdl,c_shift_ram_v12_0_12,../../../ipstatic/hdl/c_shift_ram_v12_0_vh_rfs.vhd,
+var_len_shift_ram.vhd,vhdl,xil_defaultlib,../../../../lab40.srcs/sources_1/ip/var_len_shift_ram/sim/var_len_shift_ram.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../lab40.srcs/sources_1/ip/var_len_shift_ram/sim/var_len_shift_ram.vhd" \
+
+nosort
