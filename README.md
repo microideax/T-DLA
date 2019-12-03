@@ -1,6 +1,6 @@
 # T-DLA
 
-T-DLA is an open-source hardware accelerator designed specifically for accelerating DNN models trained with ternary quantization.
+T-DLA (Ternarized Deep Learning Accelerator) is an open-source accelerator designed specifically for accelerating DNN models trained with ternarized weights. This is the first instruction-based DLA design targeting ternary-quantized weights. The T-DLA system delivers up to 0.4 TOPS with 2.58 W power consumption. It is 873.6× and 5.1× faster on ImageNet for Resnet-18 model comparing to Xeon E5-2630 CPU and Nvidia 1080 Ti GPU respectively.
 
 ## Details of the Repo
 
@@ -24,7 +24,7 @@ The corresponding publication is:
 ```
 
 # Corresponding Publication
-Please cite our publication of T-DLA if it helps you:
+If you wish to cite our work, please use the following citation:
 ```
 @article{yao2019tdla,
   title={T-DLA: An Open-source Deep Learning Accelerator for Ternarized DNN Models on Embedded FPGA},
