@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2018.1 (64-bit)              -->
+<!-- Product Version: Vivado v2018.2 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="36" Path="/home/yaochen/work/NN/TDLA/t_dla_ip/lab40.xpr">
+<Project Version="7" Minor="38" Path="/home/yaochen/work/NN/TDLA/t_dla_ip/lab40.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="63728db35d0d45c8aa72093aa3e73a30"/>
@@ -43,19 +43,20 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="60"/>
-    <Option Name="WTModelSimExportSim" Val="60"/>
-    <Option Name="WTQuestaExportSim" Val="60"/>
-    <Option Name="WTIesExportSim" Val="60"/>
-    <Option Name="WTVcsExportSim" Val="60"/>
-    <Option Name="WTRivieraExportSim" Val="60"/>
-    <Option Name="WTActivehdlExportSim" Val="60"/>
+    <Option Name="WTXSimExportSim" Val="62"/>
+    <Option Name="WTModelSimExportSim" Val="62"/>
+    <Option Name="WTQuestaExportSim" Val="62"/>
+    <Option Name="WTIesExportSim" Val="62"/>
+    <Option Name="WTVcsExportSim" Val="62"/>
+    <Option Name="WTRivieraExportSim" Val="62"/>
+    <Option Name="WTActivehdlExportSim" Val="62"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
     <Option Name="XSimArrayDisplayLimit" Val="1024"/>
     <Option Name="XSimTraceLimit" Val="65536"/>
     <Option Name="SimTypes" Val="rtl"/>
+    <Option Name="MEMEnableMemoryMapGeneration" Val="TRUE"/>
   </Configuration>
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
@@ -241,7 +242,6 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="top"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -554,7 +554,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="feature_in_mem_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="feature_in_mem_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="feature_in_mem_gen_synth_1" IncludeInArchive="false">
+    <Run Id="feature_in_mem_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="feature_in_mem_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="feature_in_mem_gen_synth_1" IncludeInArchive="false" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
@@ -570,7 +570,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="i_memory_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="i_memory_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="i_memory_gen_synth_1" IncludeInArchive="false">
+    <Run Id="i_memory_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="i_memory_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="i_memory_gen_synth_1" IncludeInArchive="false" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
@@ -586,7 +586,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="scaler_mem_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="scaler_mem_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="scaler_mem_gen_synth_1" IncludeInArchive="false">
+    <Run Id="scaler_mem_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="scaler_mem_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="scaler_mem_gen_synth_1" IncludeInArchive="false" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
@@ -602,7 +602,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="temp_result_mem_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="temp_result_mem_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="temp_result_mem_gen_synth_1" IncludeInArchive="false">
+    <Run Id="temp_result_mem_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="temp_result_mem_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="temp_result_mem_gen_synth_1" IncludeInArchive="false" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
@@ -618,7 +618,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="weight_ram_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="weight_ram_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="weight_ram_gen_synth_1" IncludeInArchive="false">
+    <Run Id="weight_ram_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="weight_ram_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="weight_ram_gen_synth_1" IncludeInArchive="false" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
@@ -634,7 +634,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_3" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_3" SynthRun="synth_3" IncludeInArchive="true">
+    <Run Id="impl_3" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_3" SynthRun="synth_3" IncludeInArchive="true" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
@@ -661,7 +661,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="fifo_generator_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="fifo_generator_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="fifo_generator_0_synth_1" IncludeInArchive="false">
+    <Run Id="fifo_generator_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="fifo_generator_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="fifo_generator_0_synth_1" IncludeInArchive="false" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
@@ -677,7 +677,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="fifo_generator_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="fifo_generator_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="fifo_generator_1_synth_1" IncludeInArchive="false">
+    <Run Id="fifo_generator_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="fifo_generator_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="fifo_generator_1_synth_1" IncludeInArchive="false" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
@@ -693,7 +693,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="pooling_buf_by_fifo_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="pooling_buf_by_fifo_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="pooling_buf_by_fifo_gen_synth_1" IncludeInArchive="false">
+    <Run Id="pooling_buf_by_fifo_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="pooling_buf_by_fifo_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="pooling_buf_by_fifo_gen_synth_1" IncludeInArchive="false" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
@@ -709,7 +709,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="var_len_shift_ram_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="var_len_shift_ram" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="var_len_shift_ram_synth_1" IncludeInArchive="false">
+    <Run Id="var_len_shift_ram_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="var_len_shift_ram" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="var_len_shift_ram_synth_1" IncludeInArchive="false" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
@@ -725,7 +725,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="feature_out_mem_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="feature_out_mem_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="feature_out_mem_gen_synth_1" IncludeInArchive="false">
+    <Run Id="feature_out_mem_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="feature_out_mem_gen" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="feature_out_mem_gen_synth_1" IncludeInArchive="false" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>

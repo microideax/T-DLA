@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_gpio:2.0
--- IP Revision: 18
+-- IP Revision: 19
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY axi_gpio_v2_0_18;
-USE axi_gpio_v2_0_18.axi_gpio;
+LIBRARY axi_gpio_v2_0_19;
+USE axi_gpio_v2_0_19.axi_gpio;
 
 ENTITY design_1_axi_gpio_0_0 IS
   PORT (
@@ -132,11 +132,11 @@ ARCHITECTURE design_1_axi_gpio_0_0_arch OF design_1_axi_gpio_0_0 IS
     );
   END COMPONENT axi_gpio;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF design_1_axi_gpio_0_0_arch: ARCHITECTURE IS "axi_gpio,Vivado 2018.1";
+  ATTRIBUTE X_CORE_INFO OF design_1_axi_gpio_0_0_arch: ARCHITECTURE IS "axi_gpio,Vivado 2018.2";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_axi_gpio_0_0_arch : ARCHITECTURE IS "design_1_axi_gpio_0_0,axi_gpio,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_axi_gpio_0_0_arch: ARCHITECTURE IS "design_1_axi_gpio_0_0,axi_gpio,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_gpio,x_ipVersion=2.0,x_ipCoreRevision=18,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_GPIO_WIDTH=1,C_GPIO2_WIDTH=32,C_ALL_INPUTS=0,C_ALL_INPUTS_2=0,C_ALL_OUTPUTS=1,C_ALL_OUTPUTS_2=0,C_INTERRUPT_PRESENT=0,C_DOUT_DEFAULT=0x00000000,C_TRI_DEFAULT=0xFFFFFFFF,C_IS_DUAL=0,C_DOUT_DEFAULT_2=0x00000000,C_TRI_DEFAULT_2=0xFFFFFFFF}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_axi_gpio_0_0_arch: ARCHITECTURE IS "design_1_axi_gpio_0_0,axi_gpio,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_gpio,x_ipVersion=2.0,x_ipCoreRevision=19,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_GPIO_WIDTH=1,C_GPIO2_WIDTH=32,C_ALL_INPUTS=0,C_ALL_INPUTS_2=0,C_ALL_OUTPUTS=1,C_ALL_OUTPUTS_2=0,C_INTERRUPT_PRESENT=0,C_DOUT_DEFAULT=0x00000000,C_TRI_DEFAULT=0xFFFFFFFF,C_IS_DUAL=0,C_DOUT_DEFAULT_2=0x00000000,C_TRI_DEFAULT_2=0xFFFFFFFF}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF gpio_io_o: SIGNAL IS "XIL_INTERFACENAME GPIO, BOARD.ASSOCIATED_PARAM GPIO_BOARD_INTERFACE";

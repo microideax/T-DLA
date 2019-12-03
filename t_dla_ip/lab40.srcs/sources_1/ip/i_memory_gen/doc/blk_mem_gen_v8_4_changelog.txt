@@ -1,3 +1,7 @@
+2018.2:
+ * Version 8.4 (Rev. 1)
+ * No changes
+
 2018.1:
  * Version 8.4 (Rev. 1)
  * No changes

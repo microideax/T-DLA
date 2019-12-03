@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xCC6CFA53809FFAAC" bd:device="xc7z020clg484-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.1" bd:top="design_1" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xCC6CFA53809FFAAC" bd:device="xc7z020clg484-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.2" bd:top="design_1" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -284,12 +284,10 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>smartconnect_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="smartconnect" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:instanceName>top_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="top" spirit:vendor="user.org" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_smartconnect_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="NUM_MI">6</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_top_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -311,10 +309,12 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>top_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="top" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:instanceName>smartconnect_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="smartconnect" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_top_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_smartconnect_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_MI">6</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -353,10 +353,10 @@
         <spirit:internalPortReference spirit:componentRef="rst_ps7_0_100M" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_1" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="smartconnect_0" spirit:portRef="aclk"/>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="clk"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_1" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="smartconnect_0" spirit:portRef="aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>
@@ -368,9 +368,9 @@
         <spirit:internalPortReference spirit:componentRef="rst_ps7_0_100M" spirit:portRef="peripheral_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_1" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="rst"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_1" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="top_0" spirit:portRef="rst"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>axi_bram_ctrl_0_bram_addr_a</spirit:name>

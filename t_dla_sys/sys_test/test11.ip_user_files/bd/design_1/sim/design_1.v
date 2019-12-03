@@ -1,8 +1,8 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-//Date        : Sun Nov 25 17:43:08 2018
-//Host        : kaizhang-MS-7B46 running 64-bit Ubuntu 18.04.1 LTS
+//Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+//Date        : Wed Sep 25 14:22:22 2019
+//Host        : yao-ADSC running 64-bit Ubuntu 16.04.5 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
@@ -54,10 +54,10 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
 
-  wire [14:0]axi_bram_ctrl_0_bram_addr_a;
+  wire [15:0]axi_bram_ctrl_0_bram_addr_a;
   wire axi_bram_ctrl_0_bram_en_a;
   wire [31:0]axi_bram_ctrl_0_bram_wrdata_a;
-  wire [14:0]axi_bram_ctrl_1_bram_addr_a;
+  wire [15:0]axi_bram_ctrl_1_bram_addr_a;
   wire axi_bram_ctrl_1_bram_en_a;
   wire [0:0]axi_gpio_0_gpio_io_o;
   wire [14:0]processing_system7_0_DDR_ADDR;
@@ -124,7 +124,7 @@ module design_1
   wire processing_system7_0_M_AXI_GP0_WVALID;
   wire [0:0]rst_ps7_0_100M_interconnect_aresetn;
   wire [0:0]rst_ps7_0_100M_peripheral_aresetn;
-  wire [14:0]smartconnect_0_M00_AXI_ARADDR;
+  wire [15:0]smartconnect_0_M00_AXI_ARADDR;
   wire [1:0]smartconnect_0_M00_AXI_ARBURST;
   wire [3:0]smartconnect_0_M00_AXI_ARCACHE;
   wire [7:0]smartconnect_0_M00_AXI_ARLEN;
@@ -133,7 +133,7 @@ module design_1
   wire smartconnect_0_M00_AXI_ARREADY;
   wire [2:0]smartconnect_0_M00_AXI_ARSIZE;
   wire smartconnect_0_M00_AXI_ARVALID;
-  wire [14:0]smartconnect_0_M00_AXI_AWADDR;
+  wire [15:0]smartconnect_0_M00_AXI_AWADDR;
   wire [1:0]smartconnect_0_M00_AXI_AWBURST;
   wire [3:0]smartconnect_0_M00_AXI_AWCACHE;
   wire [7:0]smartconnect_0_M00_AXI_AWLEN;
@@ -155,7 +155,7 @@ module design_1
   wire smartconnect_0_M00_AXI_WREADY;
   wire [3:0]smartconnect_0_M00_AXI_WSTRB;
   wire smartconnect_0_M00_AXI_WVALID;
-  wire [14:0]smartconnect_0_M01_AXI_ARADDR;
+  wire [15:0]smartconnect_0_M01_AXI_ARADDR;
   wire [1:0]smartconnect_0_M01_AXI_ARBURST;
   wire [3:0]smartconnect_0_M01_AXI_ARCACHE;
   wire [7:0]smartconnect_0_M01_AXI_ARLEN;
@@ -164,7 +164,7 @@ module design_1
   wire smartconnect_0_M01_AXI_ARREADY;
   wire [2:0]smartconnect_0_M01_AXI_ARSIZE;
   wire smartconnect_0_M01_AXI_ARVALID;
-  wire [14:0]smartconnect_0_M01_AXI_AWADDR;
+  wire [15:0]smartconnect_0_M01_AXI_AWADDR;
   wire [1:0]smartconnect_0_M01_AXI_AWBURST;
   wire [3:0]smartconnect_0_M01_AXI_AWCACHE;
   wire [7:0]smartconnect_0_M01_AXI_AWLEN;
@@ -220,8 +220,8 @@ module design_1
   wire smartconnect_0_M03_AXI_WREADY;
   wire [3:0]smartconnect_0_M03_AXI_WSTRB;
   wire smartconnect_0_M03_AXI_WVALID;
-  wire top_1_CLP_state;
-  wire [15:0]top_1_arm_read_feature_data;
+  wire top_0_CLP_state;
+  wire [23:0]top_0_arm_read_feature_data;
 
   design_1_axi_bram_ctrl_0_0 axi_bram_ctrl_0
        (.bram_addr_a(axi_bram_ctrl_0_bram_addr_a),
@@ -264,7 +264,7 @@ module design_1
   design_1_axi_bram_ctrl_0_1 axi_bram_ctrl_1
        (.bram_addr_a(axi_bram_ctrl_1_bram_addr_a),
         .bram_en_a(axi_bram_ctrl_1_bram_en_a),
-        .bram_rddata_a(top_1_arm_read_feature_data),
+        .bram_rddata_a(top_0_arm_read_feature_data),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(smartconnect_0_M01_AXI_ARADDR),
         .s_axi_arburst(smartconnect_0_M01_AXI_ARBURST),
@@ -320,7 +320,7 @@ module design_1
         .s_axi_wstrb(smartconnect_0_M02_AXI_WSTRB),
         .s_axi_wvalid(smartconnect_0_M02_AXI_WVALID));
   design_1_axi_gpio_0_1 axi_gpio_1
-       (.gpio_io_i(top_1_CLP_state),
+       (.gpio_io_i(top_0_CLP_state),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(smartconnect_0_M03_AXI_ARADDR),
         .s_axi_aresetn(rst_ps7_0_100M_peripheral_aresetn),
@@ -511,18 +511,28 @@ module design_1
         .M03_AXI_wvalid(smartconnect_0_M03_AXI_WVALID),
         .M04_AXI_arready(1'b0),
         .M04_AXI_awready(1'b0),
+        .M04_AXI_bid(1'b0),
         .M04_AXI_bresp({1'b0,1'b0}),
+        .M04_AXI_buser(1'b0),
         .M04_AXI_bvalid(1'b0),
-        .M04_AXI_rdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .M04_AXI_rdata(1'b0),
+        .M04_AXI_rid(1'b0),
+        .M04_AXI_rlast(1'b0),
         .M04_AXI_rresp({1'b0,1'b0}),
+        .M04_AXI_ruser(1'b0),
         .M04_AXI_rvalid(1'b0),
         .M04_AXI_wready(1'b0),
         .M05_AXI_arready(1'b0),
         .M05_AXI_awready(1'b0),
+        .M05_AXI_bid(1'b0),
         .M05_AXI_bresp({1'b0,1'b0}),
+        .M05_AXI_buser(1'b0),
         .M05_AXI_bvalid(1'b0),
-        .M05_AXI_rdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .M05_AXI_rdata(1'b0),
+        .M05_AXI_rid(1'b0),
+        .M05_AXI_rlast(1'b0),
         .M05_AXI_rresp({1'b0,1'b0}),
+        .M05_AXI_ruser(1'b0),
         .M05_AXI_rvalid(1'b0),
         .M05_AXI_wready(1'b0),
         .S00_AXI_araddr(processing_system7_0_M_AXI_GP0_ARADDR),
@@ -565,14 +575,14 @@ module design_1
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_ps7_0_100M_interconnect_aresetn));
-  design_1_top_1_0 top_1
-       (.CLP_state(top_1_CLP_state),
+  design_1_top_0_0 top_0
+       (.CLP_state(top_0_CLP_state),
         .arm_read_feature_addr(axi_bram_ctrl_1_bram_addr_a),
-        .arm_read_feature_data(top_1_arm_read_feature_data),
+        .arm_read_feature_data(top_0_arm_read_feature_data),
         .arm_read_feature_enable(axi_bram_ctrl_1_bram_en_a),
         .arm_read_feature_select(1'b0),
         .arm_write_feature_addr(axi_bram_ctrl_0_bram_addr_a),
-        .arm_write_feature_data(axi_bram_ctrl_0_bram_wrdata_a[15:0]),
+        .arm_write_feature_data(axi_bram_ctrl_0_bram_wrdata_a[23:0]),
         .arm_write_feature_enable(axi_bram_ctrl_0_bram_en_a),
         .arm_write_feature_select(1'b0),
         .clk(processing_system7_0_FCLK_CLK0),

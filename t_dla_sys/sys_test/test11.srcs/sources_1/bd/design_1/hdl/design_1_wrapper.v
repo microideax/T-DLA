@@ -1,8 +1,8 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-//Date        : Tue Nov 27 14:19:13 2018
-//Host        : kaizhang-MS-7B46 running 64-bit Ubuntu 18.04.1 LTS
+//Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+//Date        : Wed Sep 25 14:22:22 2019
+//Host        : yao-ADSC running 64-bit Ubuntu 16.04.5 LTS
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
 //Purpose     : IP block netlist

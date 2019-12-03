@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:sc_switchboard:1.0
-// IP Revision: 4
+// IP Revision: 5
 
 `timescale 1ns/1ps
 
@@ -96,7 +96,7 @@ output wire [5 : 0] m_sc_info;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 M00_SC PAYLD [56:0] [56:0], xilinx.com:interface:sc:1.0 M01_SC PAYLD [56:0] [113:57], xilinx.com:interface:sc:1.0 M02_SC PAYLD [56:0] [170:114], xilinx.com:interface:sc:1.0 M03_SC PAYLD [56:0] [227:171], xilinx.com:interface:sc:1.0 M04_SC PAYLD [56:0] [284:228], xilinx.com:interface:sc:1.0 M05_SC PAYLD [56:0] [341:285]" *)
 output wire [341 : 0] m_sc_payld;
 
-  sc_switchboard_v1_0_4_top #(
+  sc_switchboard_v1_0_5_top #(
     .C_PAYLD_WIDTH(57),
     .K_MAX_INFO_WIDTH(1),
     .C_S_PIPELINES(0),

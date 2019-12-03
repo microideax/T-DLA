@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:sc_exit:1.0
-// IP Revision: 6
+// IP Revision: 7
 
-(* X_CORE_INFO = "sc_exit_v1_0_6_top,Vivado 2018.1" *)
-(* CHECK_LICENSE_TYPE = "bd_48ac_m00e_0,sc_exit_v1_0_6_top,{}" *)
-(* CORE_GENERATION_INFO = "bd_48ac_m00e_0,sc_exit_v1_0_6_top,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_exit,x_ipVersion=1.0,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_ENABLE_PIPELINING=0x1,C_IS_CASCADED=0,C_SSC_ROUTE_WIDTH=1,C_MEP_IDENTIFIER_WIDTH=1,C_SSC_ROUTE_ARRAY=0b01,C_RDATA_WIDTH=32,C_WDATA_WIDTH=32,C_M_RUSER_BITS_PER_BYTE=0,C_M_WUSER_BITS_PER_BYTE=0,C_MAX_RUSER_BITS_PER_BYTE=0,C_MAX_WUSER_BITS_PER_BYTE=0,C_M_ARUSER_WIDTH=0,C_M_AWUSER_WIDTH=0,C_M_R\
+(* X_CORE_INFO = "sc_exit_v1_0_7_top,Vivado 2018.2" *)
+(* CHECK_LICENSE_TYPE = "bd_48ac_m00e_0,sc_exit_v1_0_7_top,{}" *)
+(* CORE_GENERATION_INFO = "bd_48ac_m00e_0,sc_exit_v1_0_7_top,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_exit,x_ipVersion=1.0,x_ipCoreRevision=7,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_ENABLE_PIPELINING=0x1,C_IS_CASCADED=0,C_SSC_ROUTE_WIDTH=1,C_MEP_IDENTIFIER_WIDTH=1,C_SSC_ROUTE_ARRAY=0b01,C_RDATA_WIDTH=32,C_WDATA_WIDTH=32,C_M_RUSER_BITS_PER_BYTE=0,C_M_WUSER_BITS_PER_BYTE=0,C_MAX_RUSER_BITS_PER_BYTE=0,C_MAX_WUSER_BITS_PER_BYTE=0,C_M_ARUSER_WIDTH=0,C_M_AWUSER_WIDTH=0,C_M_R\
 USER_WIDTH=0,C_M_WUSER_WIDTH=0,C_M_BUSER_WIDTH=0,C_S_ID_WIDTH=3,C_M_ID_WIDTH=0,C_ADDR_WIDTH=16,C_M_PROTOCOL=0,C_HAS_LOCK=0,C_NUM_MSC=6,C_SINGLE_ISSUING=0,C_M_LIMIT_READ_LENGTH=16,C_M_LIMIT_WRITE_LENGTH=16,C_READ_ACCEPTANCE=1,C_WRITE_ACCEPTANCE=1}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_48ac_m00e_0 (
@@ -284,7 +284,7 @@ input wire m_axi_rvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RREADY" *)
 output wire m_axi_rready;
 
-  sc_exit_v1_0_6_top #(
+  sc_exit_v1_0_7_top #(
     .C_FAMILY("zynq"),
     .C_ENABLE_PIPELINING(1'H1),
     .C_IS_CASCADED(0),

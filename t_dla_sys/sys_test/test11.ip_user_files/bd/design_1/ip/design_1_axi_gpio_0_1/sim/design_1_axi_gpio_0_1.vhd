@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_gpio:2.0
--- IP Revision: 18
+-- IP Revision: 19
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY axi_gpio_v2_0_18;
-USE axi_gpio_v2_0_18.axi_gpio;
+LIBRARY axi_gpio_v2_0_19;
+USE axi_gpio_v2_0_19.axi_gpio;
 
 ENTITY design_1_axi_gpio_0_1 IS
   PORT (

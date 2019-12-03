@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:sc_node:1.0
-// IP Revision: 8
+// IP Revision: 9
 
 `timescale 1ns/1ps
 
@@ -103,7 +103,7 @@ output wire [0 : 0] m_sc_info;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 M_SC PAYLD" *)
 output wire [146 : 0] m_sc_payld;
 
-  sc_node_v1_0_8_top #(
+  sc_node_v1_0_9_top #(
     .C_FAMILY("zynq"),
     .C_FIFO_IP(0),
     .C_DISABLE_IP(0),

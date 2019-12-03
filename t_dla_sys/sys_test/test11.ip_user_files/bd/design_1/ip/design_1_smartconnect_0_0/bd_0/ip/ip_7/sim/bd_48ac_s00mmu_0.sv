@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:sc_mmu:1.0
-// IP Revision: 5
+// IP Revision: 6
 
 `timescale 1ns/1ps
 
@@ -309,13 +309,13 @@ UM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BY
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RREADY" *)
 output wire m_axi_rready;
 
-  sc_mmu_v1_0_5_top #(
+  sc_mmu_v1_0_6_top #(
     .C_FAMILY("zynq"),
     .C_IS_CASCADED(0),
     .C_ENABLE_PIPELINING(1'H1),
     .C_NUM_SEG(4),
     .C_SEG_BASE_ADDR_ARRAY(256'H0000000042000000000000004121000000000000412000000000000040000000),
-    .C_SEG_SIZE_ARRAY(128'H0000000f00000010000000100000000f),
+    .C_SEG_SIZE_ARRAY(128'H00000010000000100000001000000010),
     .C_SEG_SEP_ROUTE_ARRAY(256'H0000000000000001000000000000000300000000000000020000000000000000),
     .C_SEG_SUPPORTS_READ_ARRAY(4'B1111),
     .C_SEG_SUPPORTS_WRITE_ARRAY(4'B1111),

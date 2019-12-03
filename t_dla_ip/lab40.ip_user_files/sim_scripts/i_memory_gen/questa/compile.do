@@ -10,17 +10,17 @@ vmap xpm questa_lib/msim/xpm
 vmap blk_mem_gen_v8_4_1 questa_lib/msim/blk_mem_gen_v8_4_1
 
 vlog -work xil_defaultlib -64 -sv \
-"/opt/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"/opt/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+"/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -64 -93 \
-"/opt/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_VCOMP.vhd" \
+"/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work blk_mem_gen_v8_4_1 -64 \
 "../../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
 
 vlog -work xil_defaultlib -64 \
-"../../../../lab35.srcs/sources_1/ip/i_memory_gen/sim/i_memory_gen.v" \
+"../../../../lab40.srcs/sources_1/ip/i_memory_gen/sim/i_memory_gen.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

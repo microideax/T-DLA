@@ -47,6 +47,7 @@ module CLP_ctr#(
     
     output  reg                                         state
     );
+    
 genvar i,j,k,x,y,z;
 
 

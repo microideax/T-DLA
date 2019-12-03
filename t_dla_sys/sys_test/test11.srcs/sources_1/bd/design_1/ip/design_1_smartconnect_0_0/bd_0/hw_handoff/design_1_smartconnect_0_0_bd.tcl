@@ -20,7 +20,7 @@ set script_folder [_tcl::get_script_folder]
 ################################################################
 # Check if script is running in correct Vivado version.
 ################################################################
-set scripts_vivado_version 2018.1
+set scripts_vivado_version 2018.2
 set current_vivado_version [version -short]
 
 if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
@@ -2553,19 +2553,7 @@ proc create_root_design { parentCell } {
    CONFIG.WUSER_BITS_PER_BYTE {0} \
    ] $M03_AXI
   set M04_AXI [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:aximm_rtl:1.0 M04_AXI ]
-  set_property -dict [ list \
-   CONFIG.MAX_BURST_LENGTH {1} \
-   CONFIG.RUSER_BITS_PER_BYTE {0} \
-   CONFIG.SUPPORTS_NARROW_BURST {0} \
-   CONFIG.WUSER_BITS_PER_BYTE {0} \
-   ] $M04_AXI
   set M05_AXI [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:aximm_rtl:1.0 M05_AXI ]
-  set_property -dict [ list \
-   CONFIG.MAX_BURST_LENGTH {1} \
-   CONFIG.RUSER_BITS_PER_BYTE {0} \
-   CONFIG.SUPPORTS_NARROW_BURST {0} \
-   CONFIG.WUSER_BITS_PER_BYTE {0} \
-   ] $M05_AXI
   set S00_AXI [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 S00_AXI ]
 
   # Create ports

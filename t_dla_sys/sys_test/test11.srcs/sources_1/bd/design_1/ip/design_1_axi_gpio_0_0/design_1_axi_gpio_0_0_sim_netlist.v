@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-// Date        : Fri Nov 23 22:23:20 2018
-// Host        : kaizhang-MS-7B46 running 64-bit Ubuntu 18.04.1 LTS
+// Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+// Date        : Wed Sep 25 14:23:41 2019
+// Host        : yao-ADSC running 64-bit Ubuntu 16.04.5 LTS
 // Command     : write_verilog -force -mode funcsim
-//               /home/kaizhang/TNN_ACC/test04/test04.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_sim_netlist.v
+//               /home/yaochen/work/NN/TDLA/t_dla_sys/sys_test/test11.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_sim_netlist.v
 // Design      : design_1_axi_gpio_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_axi_gpio_0_0,axi_gpio,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_gpio,Vivado 2018.1" *) 
+(* CHECK_LICENSE_TYPE = "design_1_axi_gpio_0_0,axi_gpio,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_gpio,Vivado 2018.2" *) 
 (* NotValidForBitStream *)
 module design_1_axi_gpio_0_0
    (s_axi_aclk,

@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:sc_si_converter:1.0
-// IP Revision: 5
+// IP Revision: 6
 
 `timescale 1ns/1ps
 
@@ -303,7 +303,7 @@ M_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYT
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RREADY" *)
 output wire m_axi_rready;
 
-  sc_si_converter_v1_0_5_top #(
+  sc_si_converter_v1_0_6_top #(
     .C_LIMIT_WRITE_LENGTH(0),
     .C_LIMIT_READ_LENGTH(0),
     .C_WRITE_WATERMARK(0),

@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -57,8 +57,13 @@
 i_memory_gen your_instance_name (
   .clka(clka),    // input wire clka
   .ena(ena),      // input wire ena
-  .addra(addra),  // input wire [9 : 0] addra
-  .douta(douta)  // output wire [63 : 0] douta
+  .wea(wea),      // input wire [0 : 0] wea
+  .addra(addra),  // input wire [8 : 0] addra
+  .dina(dina),    // input wire [63 : 0] dina
+  .clkb(clkb),    // input wire clkb
+  .enb(enb),      // input wire enb
+  .addrb(addrb),  // input wire [9 : 0] addrb
+  .doutb(doutb)  // output wire [31 : 0] doutb
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -60,8 +60,13 @@ ENTITY i_memory_gen IS
   PORT (
     clka : IN STD_LOGIC;
     ena : IN STD_LOGIC;
-    addra : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-    douta : OUT STD_LOGIC_VECTOR(63 DOWNTO 0)
+    wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    addra : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+    dina : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
+    clkb : IN STD_LOGIC;
+    enb : IN STD_LOGIC;
+    addrb : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+    doutb : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END i_memory_gen;
 
@@ -150,7 +155,7 @@ ARCHITECTURE i_memory_gen_arch OF i_memory_gen IS
       ena : IN STD_LOGIC;
       regcea : IN STD_LOGIC;
       wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      addra : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      addra : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
       dina : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
       douta : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
       clkb : IN STD_LOGIC;
@@ -159,8 +164,8 @@ ARCHITECTURE i_memory_gen_arch OF i_memory_gen IS
       regceb : IN STD_LOGIC;
       web : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       addrb : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-      dinb : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
-      doutb : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
+      dinb : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+      doutb : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       injectsbiterr : IN STD_LOGIC;
       injectdbiterr : IN STD_LOGIC;
       eccpipece : IN STD_LOGIC;
@@ -198,7 +203,7 @@ ARCHITECTURE i_memory_gen_arch OF i_memory_gen IS
       s_axi_arvalid : IN STD_LOGIC;
       s_axi_arready : OUT STD_LOGIC;
       s_axi_rid : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-      s_axi_rdata : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
+      s_axi_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       s_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       s_axi_rlast : OUT STD_LOGIC;
       s_axi_rvalid : OUT STD_LOGIC;
@@ -211,18 +216,24 @@ ARCHITECTURE i_memory_gen_arch OF i_memory_gen IS
     );
   END COMPONENT blk_mem_gen_v8_4_1;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF i_memory_gen_arch: ARCHITECTURE IS "blk_mem_gen_v8_4_1,Vivado 2018.1";
+  ATTRIBUTE X_CORE_INFO OF i_memory_gen_arch: ARCHITECTURE IS "blk_mem_gen_v8_4_1,Vivado 2018.2";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF i_memory_gen_arch : ARCHITECTURE IS "i_memory_gen,blk_mem_gen_v8_4_1,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF i_memory_gen_arch: ARCHITECTURE IS "i_memory_gen,blk_mem_gen_v8_4_1,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=blk_mem_gen,x_ipVersion=8.4,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_XDEVICEFAMILY=zynq,C_ELABORATION_DIR=./,C_INTERFACE_TYPE=0,C_AXI_TYPE=1,C_AXI_SLAVE_TYPE=0,C_USE_BRAM_BLOCK=0,C_ENABLE_32BIT_ADDRESS=0,C_CTRL_ECC_ALGO=NONE,C_HAS_AXI_ID=0,C_AXI_ID_WIDTH=4,C_MEM_TYPE=3,C_BYTE_SIZE=9,C_ALGORITHM=1,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=0,C_INIT_FILE_NAME=no_coe_fil" & 
-"e_loaded,C_INIT_FILE=i_memory_gen.mem,C_USE_DEFAULT_DATA=0,C_DEFAULT_DATA=0,C_HAS_RSTA=0,C_RST_PRIORITY_A=CE,C_RSTRAM_A=0,C_INITA_VAL=0,C_HAS_ENA=1,C_HAS_REGCEA=0,C_USE_BYTE_WEA=0,C_WEA_WIDTH=1,C_WRITE_MODE_A=WRITE_FIRST,C_WRITE_WIDTH_A=64,C_READ_WIDTH_A=64,C_WRITE_DEPTH_A=1024,C_READ_DEPTH_A=1024,C_ADDRA_WIDTH=10,C_HAS_RSTB=0,C_RST_PRIORITY_B=CE,C_RSTRAM_B=0,C_INITB_VAL=0,C_HAS_ENB=0,C_HAS_REGCEB=0,C_USE_BYTE_WEB=0,C_WEB_WIDTH=1,C_WRITE_MODE_B=WRITE_FIRST,C_WRITE_WIDTH_B=64,C_READ_WIDTH_B=64,C_" & 
-"WRITE_DEPTH_B=1024,C_READ_DEPTH_B=1024,C_ADDRB_WIDTH=10,C_HAS_MEM_OUTPUT_REGS_A=1,C_HAS_MEM_OUTPUT_REGS_B=0,C_HAS_MUX_OUTPUT_REGS_A=1,C_HAS_MUX_OUTPUT_REGS_B=0,C_MUX_PIPELINE_STAGES=0,C_HAS_SOFTECC_INPUT_REGS_A=0,C_HAS_SOFTECC_OUTPUT_REGS_B=0,C_USE_SOFTECC=0,C_USE_ECC=0,C_EN_ECC_PIPE=0,C_HAS_INJECTERR=0,C_SIM_COLLISION_CHECK=ALL,C_COMMON_CLK=0,C_DISABLE_WARN_BHV_COLL=0,C_EN_SLEEP_PIN=0,C_USE_URAM=0,C_EN_RDADDRA_CHG=0,C_EN_RDADDRB_CHG=0,C_EN_DEEPSLEEP_PIN=0,C_EN_SHUTDOWN_PIN=0,C_EN_SAFETY_CKT=0,C" & 
-"_DISABLE_WARN_BHV_RANGE=0,C_COUNT_36K_BRAM=2,C_COUNT_18K_BRAM=0,C_EST_POWER_SUMMARY=Estimated Power for IP     _     5.244 mW}";
+  ATTRIBUTE CORE_GENERATION_INFO OF i_memory_gen_arch: ARCHITECTURE IS "i_memory_gen,blk_mem_gen_v8_4_1,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=blk_mem_gen,x_ipVersion=8.4,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_XDEVICEFAMILY=zynq,C_ELABORATION_DIR=./,C_INTERFACE_TYPE=0,C_AXI_TYPE=1,C_AXI_SLAVE_TYPE=0,C_USE_BRAM_BLOCK=0,C_ENABLE_32BIT_ADDRESS=0,C_CTRL_ECC_ALGO=NONE,C_HAS_AXI_ID=0,C_AXI_ID_WIDTH=4,C_MEM_TYPE=1,C_BYTE_SIZE=9,C_ALGORITHM=1,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=0,C_INIT_FILE_NAME=no_coe_fil" & 
+"e_loaded,C_INIT_FILE=i_memory_gen.mem,C_USE_DEFAULT_DATA=0,C_DEFAULT_DATA=0,C_HAS_RSTA=0,C_RST_PRIORITY_A=CE,C_RSTRAM_A=0,C_INITA_VAL=0,C_HAS_ENA=1,C_HAS_REGCEA=0,C_USE_BYTE_WEA=0,C_WEA_WIDTH=1,C_WRITE_MODE_A=NO_CHANGE,C_WRITE_WIDTH_A=64,C_READ_WIDTH_A=64,C_WRITE_DEPTH_A=512,C_READ_DEPTH_A=512,C_ADDRA_WIDTH=9,C_HAS_RSTB=0,C_RST_PRIORITY_B=CE,C_RSTRAM_B=0,C_INITB_VAL=0,C_HAS_ENB=1,C_HAS_REGCEB=0,C_USE_BYTE_WEB=0,C_WEB_WIDTH=1,C_WRITE_MODE_B=READ_FIRST,C_WRITE_WIDTH_B=32,C_READ_WIDTH_B=32,C_WRITE_" & 
+"DEPTH_B=1024,C_READ_DEPTH_B=1024,C_ADDRB_WIDTH=10,C_HAS_MEM_OUTPUT_REGS_A=0,C_HAS_MEM_OUTPUT_REGS_B=1,C_HAS_MUX_OUTPUT_REGS_A=0,C_HAS_MUX_OUTPUT_REGS_B=0,C_MUX_PIPELINE_STAGES=0,C_HAS_SOFTECC_INPUT_REGS_A=0,C_HAS_SOFTECC_OUTPUT_REGS_B=0,C_USE_SOFTECC=0,C_USE_ECC=0,C_EN_ECC_PIPE=0,C_HAS_INJECTERR=0,C_SIM_COLLISION_CHECK=ALL,C_COMMON_CLK=1,C_DISABLE_WARN_BHV_COLL=0,C_EN_SLEEP_PIN=0,C_USE_URAM=0,C_EN_RDADDRA_CHG=0,C_EN_RDADDRB_CHG=0,C_EN_DEEPSLEEP_PIN=0,C_EN_SHUTDOWN_PIN=0,C_EN_SAFETY_CKT=0,C_DISAB" & 
+"LE_WARN_BHV_RANGE=0,C_COUNT_36K_BRAM=1,C_COUNT_18K_BRAM=0,C_EST_POWER_SUMMARY=Estimated Power for IP     _     5.247475 mW}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_INFO OF douta: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA DOUT";
+  ATTRIBUTE X_INTERFACE_INFO OF doutb: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTB DOUT";
+  ATTRIBUTE X_INTERFACE_INFO OF addrb: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTB ADDR";
+  ATTRIBUTE X_INTERFACE_INFO OF enb: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTB EN";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clkb: SIGNAL IS "XIL_INTERFACENAME BRAM_PORTB, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER";
+  ATTRIBUTE X_INTERFACE_INFO OF clkb: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTB CLK";
+  ATTRIBUTE X_INTERFACE_INFO OF dina: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA DIN";
   ATTRIBUTE X_INTERFACE_INFO OF addra: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR";
+  ATTRIBUTE X_INTERFACE_INFO OF wea: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA WE";
   ATTRIBUTE X_INTERFACE_INFO OF ena: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA EN";
   ATTRIBUTE X_INTERFACE_PARAMETER OF clka: SIGNAL IS "XIL_INTERFACENAME BRAM_PORTA, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER";
   ATTRIBUTE X_INTERFACE_INFO OF clka: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK";
@@ -240,7 +251,7 @@ BEGIN
       C_CTRL_ECC_ALGO => "NONE",
       C_HAS_AXI_ID => 0,
       C_AXI_ID_WIDTH => 4,
-      C_MEM_TYPE => 3,
+      C_MEM_TYPE => 1,
       C_BYTE_SIZE => 9,
       C_ALGORITHM => 1,
       C_PRIM_TYPE => 1,
@@ -257,29 +268,29 @@ BEGIN
       C_HAS_REGCEA => 0,
       C_USE_BYTE_WEA => 0,
       C_WEA_WIDTH => 1,
-      C_WRITE_MODE_A => "WRITE_FIRST",
+      C_WRITE_MODE_A => "NO_CHANGE",
       C_WRITE_WIDTH_A => 64,
       C_READ_WIDTH_A => 64,
-      C_WRITE_DEPTH_A => 1024,
-      C_READ_DEPTH_A => 1024,
-      C_ADDRA_WIDTH => 10,
+      C_WRITE_DEPTH_A => 512,
+      C_READ_DEPTH_A => 512,
+      C_ADDRA_WIDTH => 9,
       C_HAS_RSTB => 0,
       C_RST_PRIORITY_B => "CE",
       C_RSTRAM_B => 0,
       C_INITB_VAL => "0",
-      C_HAS_ENB => 0,
+      C_HAS_ENB => 1,
       C_HAS_REGCEB => 0,
       C_USE_BYTE_WEB => 0,
       C_WEB_WIDTH => 1,
-      C_WRITE_MODE_B => "WRITE_FIRST",
-      C_WRITE_WIDTH_B => 64,
-      C_READ_WIDTH_B => 64,
+      C_WRITE_MODE_B => "READ_FIRST",
+      C_WRITE_WIDTH_B => 32,
+      C_READ_WIDTH_B => 32,
       C_WRITE_DEPTH_B => 1024,
       C_READ_DEPTH_B => 1024,
       C_ADDRB_WIDTH => 10,
-      C_HAS_MEM_OUTPUT_REGS_A => 1,
-      C_HAS_MEM_OUTPUT_REGS_B => 0,
-      C_HAS_MUX_OUTPUT_REGS_A => 1,
+      C_HAS_MEM_OUTPUT_REGS_A => 0,
+      C_HAS_MEM_OUTPUT_REGS_B => 1,
+      C_HAS_MUX_OUTPUT_REGS_A => 0,
       C_HAS_MUX_OUTPUT_REGS_B => 0,
       C_MUX_PIPELINE_STAGES => 0,
       C_HAS_SOFTECC_INPUT_REGS_A => 0,
@@ -289,7 +300,7 @@ BEGIN
       C_EN_ECC_PIPE => 0,
       C_HAS_INJECTERR => 0,
       C_SIM_COLLISION_CHECK => "ALL",
-      C_COMMON_CLK => 0,
+      C_COMMON_CLK => 1,
       C_DISABLE_WARN_BHV_COLL => 0,
       C_EN_SLEEP_PIN => 0,
       C_USE_URAM => 0,
@@ -299,26 +310,26 @@ BEGIN
       C_EN_SHUTDOWN_PIN => 0,
       C_EN_SAFETY_CKT => 0,
       C_DISABLE_WARN_BHV_RANGE => 0,
-      C_COUNT_36K_BRAM => "2",
+      C_COUNT_36K_BRAM => "1",
       C_COUNT_18K_BRAM => "0",
-      C_EST_POWER_SUMMARY => "Estimated Power for IP     :     5.244 mW"
+      C_EST_POWER_SUMMARY => "Estimated Power for IP     :     5.247475 mW"
     )
     PORT MAP (
       clka => clka,
       rsta => '0',
       ena => ena,
       regcea => '0',
-      wea => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
+      wea => wea,
       addra => addra,
-      dina => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 64)),
-      douta => douta,
-      clkb => '0',
+      dina => dina,
+      clkb => clkb,
       rstb => '0',
-      enb => '0',
+      enb => enb,
       regceb => '0',
       web => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
-      addrb => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 10)),
-      dinb => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 64)),
+      addrb => addrb,
+      dinb => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
+      doutb => doutb,
       injectsbiterr => '0',
       injectdbiterr => '0',
       eccpipece => '0',

@@ -4,13 +4,13 @@ Copyright (c) <2019>
 All rights reserved.
 
 
-General terms and conditions for use of the T-DLA design. The design 
-comprising "T-DLA" and the documentation provided with them are 
-copyright Yao Chen, Deming Chen, the Advanced Digital Sciences Center, Singapore 
+General terms and conditions for use of the T-DLA design. 
+The design comprising "T-DLA" and the provided documentation is copyright protected.
+The copyright is owned by Yao Chen, Deming Chen, the Advanced Digital Sciences Center, Singapore
 and the University of Illinois at Urbana-Champaign.
 
-Only non-commercial, not-for-profit use of this design is permitted. No part 
-of this hardware design may be incorporated into a commercial product without the 
+Only non-commercial, not-for-profit use of this design is permitted. 
+No part of this design may be incorporated into a commercial product without the 
 written consent of the authors (Yao Chen and Deming Chen).  Similarly, use of 
 this software to assist in the development of new commercial FPGA designs is 
 prohibited, unless the written consent of the authors is obtained.
@@ -25,6 +25,8 @@ the authors, and full and complete attribution for use of the code is given in
 any resulting publications. Subject to these conditions, the software is
 provided free of charge to all interested parties.
 
-When referencing this particular open-source software in a publication, please 
+When referencing this particular open-source design in a publication, please 
 cite the following publication:
-Yao Chen, Kai Zhang, Cheng Gong, Cong Hao, Xiaofan Zhang, Tao Li and Deming Chen, "T-DLA: An Open-source Deep Learning Accelerator for Ternarized DNN Models on Embedded FPGA", Proceedings of IEEE Computer Society Annual Symposium on VLSI, July 2019.
+Yao Chen, Kai Zhang, Cheng Gong, Cong Hao, Xiaofan Zhang, Tao Li and Deming Chen, 
+"T-DLA: An Open-source Deep Learning Accelerator for Ternarized DNN Models on Embedded FPGA", 
+Proceedings of IEEE Computer Society Annual Symposium on VLSI, July 2019.

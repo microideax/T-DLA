@@ -1321,7 +1321,7 @@
         <spirit:displayName>Verilog Synthesis</spirit:displayName>
         <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:language>verilog</spirit:language>
-        <spirit:modelName>sc_exit_v1_0_6_top</spirit:modelName>
+        <spirit:modelName>sc_exit_v1_0_7_top</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_verilogsynthesis_xilinx_com_ip_sc_util_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -1331,11 +1331,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 27 06:19:15 UTC 2018</spirit:value>
+            <spirit:value>Wed Sep 25 06:22:25 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:4181e7f6</spirit:value>
+            <spirit:value>8:b3e104e8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1346,7 +1346,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:4181e7f6</spirit:value>
+            <spirit:value>8:b3e104e8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1362,11 +1362,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 27 06:19:15 UTC 2018</spirit:value>
+            <spirit:value>Wed Sep 25 06:22:25 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:4181e7f6</spirit:value>
+            <spirit:value>8:b3e104e8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1375,7 +1375,7 @@
         <spirit:displayName>Verilog Simulation</spirit:displayName>
         <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:language>verilog</spirit:language>
-        <spirit:modelName>sc_exit_v1_0_6_top</spirit:modelName>
+        <spirit:modelName>sc_exit_v1_0_7_top</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_verilogbehavioralsimulation_xilinx_com_ip_sc_util_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -1385,11 +1385,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 27 06:19:15 UTC 2018</spirit:value>
+            <spirit:value>Wed Sep 25 06:22:25 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:a07a0e65</spirit:value>
+            <spirit:value>8:d7c62a7c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1405,11 +1405,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 27 06:19:15 UTC 2018</spirit:value>
+            <spirit:value>Wed Sep 25 06:22:25 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:a07a0e65</spirit:value>
+            <spirit:value>8:d7c62a7c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3610,25 +3610,25 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_xilinx_com_ip_sc_util_1_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../../ipshared/02c8/hdl/verilog/sc_util_v1_0_2_constants.vh</spirit:name>
+        <spirit:name>../../../../../ipshared/5bb9/hdl/verilog/sc_util_v1_0_3_constants.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
         <spirit:logicalName>smartconnect_v1_0</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../ipshared/02c8/hdl/verilog/sc_util_v1_0_2_structs.svh</spirit:name>
+        <spirit:name>../../../../../ipshared/5bb9/hdl/verilog/sc_util_v1_0_3_structs.svh</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
         <spirit:logicalName>smartconnect_v1_0</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../ipshared/02c8/hdl/sc_util_v1_0_vl_rfs.sv</spirit:name>
+        <spirit:name>../../../../../ipshared/5bb9/hdl/sc_util_v1_0_vl_rfs.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:logicalName>smartconnect_v1_0</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="sc_util" xilinx:version="1.0" xilinx:isGenerated="true" xilinx:checksum="9fa975bc">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="sc_util" xilinx:version="1.0" xilinx:isGenerated="true" xilinx:checksum="cc08a3e7">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -3637,7 +3637,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../../ipshared/258c/hdl/sc_exit_v1_0_vl_rfs.sv</spirit:name>
+        <spirit:name>../../../../../ipshared/28cb/hdl/sc_exit_v1_0_vl_rfs.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:logicalName>smartconnect_v1_0</spirit:logicalName>
       </spirit:file>
@@ -3653,28 +3653,28 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_xilinx_com_ip_sc_util_1_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../../ipshared/02c8/hdl/verilog/sc_util_v1_0_2_constants.vh</spirit:name>
+        <spirit:name>../../../../../ipshared/5bb9/hdl/verilog/sc_util_v1_0_3_constants.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
         <spirit:logicalName>smartconnect_v1_0</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../ipshared/02c8/hdl/verilog/sc_util_v1_0_2_structs.svh</spirit:name>
+        <spirit:name>../../../../../ipshared/5bb9/hdl/verilog/sc_util_v1_0_3_structs.svh</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
         <spirit:logicalName>smartconnect_v1_0</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../ipshared/02c8/hdl/sc_util_v1_0_vl_rfs.sv</spirit:name>
+        <spirit:name>../../../../../ipshared/5bb9/hdl/sc_util_v1_0_vl_rfs.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>smartconnect_v1_0</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="sc_util" xilinx:version="1.0" xilinx:isGenerated="true" xilinx:checksum="9fa975bc">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="sc_util" xilinx:version="1.0" xilinx:isGenerated="true" xilinx:checksum="cc08a3e7">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -3683,7 +3683,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../../ipshared/258c/hdl/sc_exit_v1_0_vl_rfs.sv</spirit:name>
+        <spirit:name>../../../../../ipshared/28cb/hdl/sc_exit_v1_0_vl_rfs.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>smartconnect_v1_0</spirit:logicalName>
@@ -5188,13 +5188,12 @@
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>6</xilinx:coreRevision>
+      <xilinx:coreRevision>7</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.ADDR_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.ARUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.AWUSER_WIDTH" xilinx:valuePermission="bd"/>
@@ -5270,9 +5269,9 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2018.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2018.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="cbad486e"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8a0019da"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ef5aff9f"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="6fc78fe4"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6f9ad14d"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="1cb06698"/>

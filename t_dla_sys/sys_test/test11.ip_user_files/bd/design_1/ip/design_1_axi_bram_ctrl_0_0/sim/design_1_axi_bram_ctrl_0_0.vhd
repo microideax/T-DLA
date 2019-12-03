@@ -60,7 +60,7 @@ ENTITY design_1_axi_bram_ctrl_0_0 IS
   PORT (
     s_axi_aclk : IN STD_LOGIC;
     s_axi_aresetn : IN STD_LOGIC;
-    s_axi_awaddr : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+    s_axi_awaddr : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     s_axi_awlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     s_axi_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s_axi_awburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -77,7 +77,7 @@ ENTITY design_1_axi_bram_ctrl_0_0 IS
     s_axi_bresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s_axi_bvalid : OUT STD_LOGIC;
     s_axi_bready : IN STD_LOGIC;
-    s_axi_araddr : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+    s_axi_araddr : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     s_axi_arlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     s_axi_arsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s_axi_arburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -95,7 +95,7 @@ ENTITY design_1_axi_bram_ctrl_0_0 IS
     bram_clk_a : OUT STD_LOGIC;
     bram_en_a : OUT STD_LOGIC;
     bram_we_a : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    bram_addr_a : OUT STD_LOGIC_VECTOR(14 DOWNTO 0);
+    bram_addr_a : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     bram_wrdata_a : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     bram_rddata_a : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
@@ -130,7 +130,7 @@ ARCHITECTURE design_1_axi_bram_ctrl_0_0_arch OF design_1_axi_bram_ctrl_0_0 IS
       ecc_interrupt : OUT STD_LOGIC;
       ecc_ue : OUT STD_LOGIC;
       s_axi_awid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      s_axi_awaddr : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+      s_axi_awaddr : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       s_axi_awlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       s_axi_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       s_axi_awburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -149,7 +149,7 @@ ARCHITECTURE design_1_axi_bram_ctrl_0_0_arch OF design_1_axi_bram_ctrl_0_0 IS
       s_axi_bvalid : OUT STD_LOGIC;
       s_axi_bready : IN STD_LOGIC;
       s_axi_arid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      s_axi_araddr : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+      s_axi_araddr : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       s_axi_arlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       s_axi_arsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       s_axi_arburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -184,14 +184,14 @@ ARCHITECTURE design_1_axi_bram_ctrl_0_0_arch OF design_1_axi_bram_ctrl_0_0 IS
       bram_clk_a : OUT STD_LOGIC;
       bram_en_a : OUT STD_LOGIC;
       bram_we_a : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-      bram_addr_a : OUT STD_LOGIC_VECTOR(14 DOWNTO 0);
+      bram_addr_a : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       bram_wrdata_a : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       bram_rddata_a : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       bram_rst_b : OUT STD_LOGIC;
       bram_clk_b : OUT STD_LOGIC;
       bram_en_b : OUT STD_LOGIC;
       bram_we_b : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-      bram_addr_b : OUT STD_LOGIC_VECTOR(14 DOWNTO 0);
+      bram_addr_b : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       bram_wrdata_b : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       bram_rddata_b : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
@@ -204,7 +204,7 @@ ARCHITECTURE design_1_axi_bram_ctrl_0_0_arch OF design_1_axi_bram_ctrl_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF bram_we_a: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA WE";
   ATTRIBUTE X_INTERFACE_INFO OF bram_en_a: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA EN";
   ATTRIBUTE X_INTERFACE_INFO OF bram_clk_a: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF bram_rst_a: SIGNAL IS "XIL_INTERFACENAME BRAM_PORTA, MASTER_TYPE BRAM_CTRL, MEM_SIZE 32768, MEM_WIDTH 32, MEM_ECC NONE, READ_WRITE_MODE READ_WRITE";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF bram_rst_a: SIGNAL IS "XIL_INTERFACENAME BRAM_PORTA, MASTER_TYPE BRAM_CTRL, MEM_SIZE 65536, MEM_WIDTH 32, MEM_ECC NONE, READ_WRITE_MODE READ_WRITE";
   ATTRIBUTE X_INTERFACE_INFO OF bram_rst_a: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA RST";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI RREADY";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_rvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI RVALID";
@@ -236,7 +236,7 @@ ARCHITECTURE design_1_axi_bram_ctrl_0_0_arch OF design_1_axi_bram_ctrl_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_awburst: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI AWBURST";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_awsize: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI AWSIZE";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_awlen: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI AWLEN";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_awaddr: SIGNAL IS "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 125000000, ID_WIDTH 0, ADDR_WIDTH 15, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1" & 
+  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_awaddr: SIGNAL IS "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 125000000, ID_WIDTH 0, ADDR_WIDTH 16, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1" & 
 ", NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI AWADDR";
   ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_aresetn: SIGNAL IS "XIL_INTERFACENAME RSTIF, POLARITY ACTIVE_LOW";
@@ -247,9 +247,9 @@ BEGIN
   U0 : axi_bram_ctrl
     GENERIC MAP (
       C_BRAM_INST_MODE => "EXTERNAL",
-      C_MEMORY_DEPTH => 8192,
-      C_BRAM_ADDR_WIDTH => 13,
-      C_S_AXI_ADDR_WIDTH => 15,
+      C_MEMORY_DEPTH => 16384,
+      C_BRAM_ADDR_WIDTH => 14,
+      C_S_AXI_ADDR_WIDTH => 16,
       C_S_AXI_DATA_WIDTH => 32,
       C_S_AXI_ID_WIDTH => 1,
       C_S_AXI_PROTOCOL => "AXI4",

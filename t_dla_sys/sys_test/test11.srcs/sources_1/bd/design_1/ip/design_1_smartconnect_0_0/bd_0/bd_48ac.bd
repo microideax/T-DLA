@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x762B04A327EE12B6" bd:bdsource="SBD" bd:device="xc7z020clg484-1" bd:isScoped="true" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2018.1" bd:top="bd_48ac" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xCEE849885804CF08" bd:bdsource="SBD" bd:device="xc7z020clg484-1" bd:isScoped="true" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2018.2" bd:top="bd_48ac" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -1420,10 +1420,10 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>PROTOCOL</spirit:name>
-            <spirit:value>AXI4LITE</spirit:value>
+            <spirit:value>AXI4</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="ip"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1447,7 +1447,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>ADDR_WIDTH</spirit:name>
-            <spirit:value>9</spirit:value>
+            <spirit:value>32</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="default"/>
@@ -1510,19 +1510,19 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>HAS_BURST</spirit:name>
-            <spirit:value>0</spirit:value>
+            <spirit:value>1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="ip"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>HAS_LOCK</spirit:name>
-            <spirit:value>0</spirit:value>
+            <spirit:value>1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="ip"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1531,34 +1531,34 @@
             <spirit:value>1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="default_prop"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>HAS_CACHE</spirit:name>
-            <spirit:value>0</spirit:value>
+            <spirit:value>1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="ip"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>HAS_QOS</spirit:name>
-            <spirit:value>0</spirit:value>
+            <spirit:value>1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="ip"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>HAS_REGION</spirit:name>
-            <spirit:value>0</spirit:value>
+            <spirit:value>1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="constant"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1594,7 +1594,7 @@
             <spirit:value>0</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="user"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1618,10 +1618,10 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>MAX_BURST_LENGTH</spirit:name>
-            <spirit:value>1</spirit:value>
+            <spirit:value>256</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="user"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1666,7 +1666,7 @@
             <spirit:value>0</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="user"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1675,7 +1675,7 @@
             <spirit:value>0</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="user"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1698,10 +1698,10 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>PROTOCOL</spirit:name>
-            <spirit:value>AXI4LITE</spirit:value>
+            <spirit:value>AXI4</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="ip"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1725,7 +1725,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>ADDR_WIDTH</spirit:name>
-            <spirit:value>9</spirit:value>
+            <spirit:value>32</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="default"/>
@@ -1788,19 +1788,19 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>HAS_BURST</spirit:name>
-            <spirit:value>0</spirit:value>
+            <spirit:value>1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="ip"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>HAS_LOCK</spirit:name>
-            <spirit:value>0</spirit:value>
+            <spirit:value>1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="ip"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1809,34 +1809,34 @@
             <spirit:value>1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="default_prop"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>HAS_CACHE</spirit:name>
-            <spirit:value>0</spirit:value>
+            <spirit:value>1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="ip"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>HAS_QOS</spirit:name>
-            <spirit:value>0</spirit:value>
+            <spirit:value>1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="ip"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>HAS_REGION</spirit:name>
-            <spirit:value>0</spirit:value>
+            <spirit:value>1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="constant"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1872,7 +1872,7 @@
             <spirit:value>0</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="user"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1896,10 +1896,10 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>MAX_BURST_LENGTH</spirit:name>
-            <spirit:value>1</spirit:value>
+            <spirit:value>256</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="user"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1944,7 +1944,7 @@
             <spirit:value>0</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="user"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -1953,7 +1953,7 @@
             <spirit:value>0</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="user"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>

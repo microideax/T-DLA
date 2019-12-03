@@ -43,11 +43,12 @@ module top#(
         input   wire                                        arm_read_feature_select,
         
         input   wire                                        enable,
-        output  wire                                        CLP_state      //0 CLP idle    1 CLP busy
+        output  wire                                        CLP_state      //0 CLP idle    1 CLP busy        
         );
 
 
-
+reg      [9:0]      i_mem_addr_in;
+wire     [63:0]     i_mem_data_in;
 reg      [9:0]      i_mem_addr;
 wire     [63:0]     i_mem_dout;
 
@@ -56,11 +57,17 @@ reg                 CLP_enable;
 reg      [63:0]     ctr;
 reg                 CLP_state_p;
 
+
 i_memory_gen instruction_mem(
                 .clka(clk),
-                .ena(1'b1),
-                .addra(i_mem_addr),  // input wire [9 : 0] addra
-                .douta(i_mem_dout)  // output wire [63 : 0] douta
+                .ena(),
+                .wea(),
+                .addra(i_mem_addr_in),
+                .dina(i_mem_data_in),
+                .clkb(clk),
+                .enb(1'b1),
+                .addrb(i_mem_addr),  // input wire [9 : 0] addra
+                .doutb(i_mem_dout)  // output wire [63 : 0] douta
             );
 
 always@(posedge clk)
